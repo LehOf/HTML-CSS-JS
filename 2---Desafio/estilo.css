@@ -1,0 +1,186 @@
+body{
+    margin: 0px;
+    padding: 0px
+    
+}
+
+/* PARTE DO CABEÇALHO */
+header{
+    background-color: blue;
+    display: flex;
+    height: 10vh;
+}
+.cinza{
+    background-color: gray;
+    flex: 1;
+    height: 10vh;
+}
+.branco{
+    background-color: white;
+    flex: 2;
+    height: 10vh;
+}
+.laranja{
+    background-color: orange;
+    flex: 1;
+    height: 10vh;
+}
+
+/* PARTE DOS DOIS BLOCOS*/
+.main1{
+    background-color: blue;
+    display: flex;
+    height: 40vh;
+    
+}
+.parte1{
+    background-color: blueviolet;
+    flex: 1;
+    height:auto;
+   
+}
+.parte2{
+    background-color: cornflowerblue;
+    flex: 1;
+    height: auto;
+}
+
+/* DIV PAI DO MEIO COM IMAGEM E TEXTO */
+.main2{
+    background-color: blue;
+    display: flex;
+    height: 40vh;
+    
+}
+
+/* PARTE DA SECAO 1 */
+.selecao1 {
+    flex:1
+}
+.inferior1{
+    background-image: url("./universo1.jpg");
+    height: 20vh;
+}
+.inferior2{
+    background-color: salmon;
+    height: 20vh;
+}
+
+/* PARTE DA SECAO 2*/
+.selecao2 {
+    flex:1;
+}
+.inferior3{
+    background-image: url("./universo2.jpg");
+    height: 20vh;
+}
+.inferior4{
+    background-color: rgb(150, 45, 33);
+    height: 20vh;
+}
+
+/* PARTE DA SECAO 3 */
+.selecao3 {
+   flex: 1;
+}
+.inferior5{
+    background-image: url(./universo3.jpg);
+    height: 20vh;
+}
+.inferior6{
+    background-color: rgb(38, 32, 75);
+    height: 20vh;
+}
+
+/* DIV PAI DA PARTE DE BAIXO */
+.main3{
+    background-color: yellow;
+    display: flex;
+    height: 40vh;
+}
+
+/* PARTE DAS DIV DENTRO DO FOOTER1 */
+ .footer1{
+    flex:1.5;
+    background-color: rgb(133, 22, 10);
+    
+    
+
+}
+.minifooter1{
+    background-color: rgb(100, 175, 25);
+    height: 20vh;
+    
+}
+.minifooter2{
+    background-color: rgb(123, 255, 0);
+    height: 20vh;
+}
+
+
+/* PARTE DAS DIV DENTRO DO FOOTER2 */
+ .footer2{
+    flex:1;
+    background-color: rgb(190, 74, 62);
+}
+.minifooter3{
+    background-image: url(./ceu1.jpg);
+    height: 20vh;
+}
+.minifooter4{
+    background-image: url(./ceu2.jpg);
+    height: 20vh;
+}
+
+/* DIV MAIN 4 */
+
+.main4{
+    display: none;
+}
+/*---------------------------------------------------------------
+ PARTE QUE TRABALHA COM TELA EM TAMANHO MENOR */
+
+ @media(max-width: 600px){
+    .branco{
+        display: none;
+    }
+    header{
+        flex-direction: column-reverse;
+        height: 30vh;
+    }
+    .main1{
+        display: none;
+    }
+    .main2{
+      display: inline;
+    }
+    .selecao1,.selecao2,.selecao3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .inferior1,.inferior2,.inferior3,.inferior4,.inferior5,.inferior6{
+        flex:1;
+    }
+    .main3{
+       display: flex;
+    }
+    .footer1,.footer2{
+        flex:1;
+        
+    }
+    .main4{
+        display: flex;
+        height: 20vw;
+        margin-bottom: 10px;
+    }
+    .cc1{
+        flex: 1;
+        background-color: rgb(7, 77, 206);
+        
+    }
+    .cc2{
+        flex: 1;
+        background-image: url(./universo1.jpg);
+
+    }
+} 

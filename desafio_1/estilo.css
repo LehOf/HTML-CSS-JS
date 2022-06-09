@@ -1,0 +1,44 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: red;
+    text-align: center;
+    height: 10vh;
+    padding: 10px;
+}
+
+.meio{
+    background-color: green;
+    height: 75vh;
+    display: flex;
+    width: 100vw;
+    
+    
+}
+.menu{
+    background-color: gray;
+    text-align: center;
+    height:  75vh;
+    width: 30vw;
+    display: flex;
+
+}
+.conteudo{
+    background-color: yellow;
+    text-align: center;
+    height: 75vh;
+    width: 70vw;
+    display: flex;
+ 
+}
+.footer{
+    background-color: blue;
+    text-align: center;
+    height: 10vh;
+    padding: 10px;
+}
+
+
